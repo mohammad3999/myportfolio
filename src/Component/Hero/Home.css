@@ -1,0 +1,106 @@
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh; /* Set the height of the hero section to the full viewport height */
+}
+
+.hero h3 {
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  font-size: 36px; /* Adjust the font size for smaller screens */
+  font-weight: bold;
+}
+
+.hero h1 span {
+  color: #ff014f;
+}
+
+.hero h2 {
+  font-size: 28px; /* Adjust the font size for smaller screens */
+  font-weight: bold;
+  color: #ff014f;
+}
+
+.hero h2 span {
+  color: black;
+}
+
+.hero p {
+  color: #878e99;
+  font-size: 14px; /* Adjust the font size for smaller screens */
+  line-height: 24px; /* Adjust the line height for better readability */
+  margin-top: 20px; /* Adjust the top margin */
+}
+
+.hero_btn {
+  margin-top: 10%;
+}
+
+.hero_btn h4 {
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #43474b;
+  font-size: 12px; /* Adjust the font size for smaller screens */
+  margin: 20px 0; /* Adjust the margins */
+}
+
+.hero_btn button {
+  margin-right: 10px; /* Adjust the right margin */
+}
+
+.hero_btn i {
+  font-size: 16px; /* Adjust the font size for smaller screens */
+}
+
+.hero_btn button img {
+  width: 16px; /* Adjust the width */
+  height: 16px; /* Adjust the height */
+}
+
+.hero .left {
+  margin-right: 10%;
+}
+
+.hero .right {
+  width: 30%;
+  position: relative;
+}
+
+.hero .right_img {
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+  border-radius: 10px;
+  height: 50vh; /* Adjust the height for smaller screens */
+  width: 80%; /* Adjust the width for smaller screens */
+  margin-top: 10%;
+}
+
+.hero .right_img img {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  width: 80%; /* Make the image width 100% */
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+  }
+
+  .hero .left,
+  .hero .right {
+    width: 100%;
+    margin: 20;
+  }
+
+  .hero .right_img {
+    width: 100%;
+    height: 40vh; /* Adjust the height for smaller screens */
+  }
+}
